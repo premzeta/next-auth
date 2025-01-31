@@ -11,8 +11,8 @@ export default function Navbar() {
         <div className="space-x-4">
           {session ? (
             <>
-              <Link href="/protected"><a className="text-white hover:underline">Protected</a></Link>
-              <Link href="/unprotected"><a className="text-white hover:underline">Unprotected</a></Link>
+              <Link href="/protected" className="text-white hover:underline">Protected</Link>
+              <Link href="/unprotected" className="text-white hover:underline">Unprotected</Link>
               <button
                 onClick={() => signOut({ callbackUrl: "/" })}
                 className="text-white hover:underline"

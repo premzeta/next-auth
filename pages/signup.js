@@ -72,7 +72,7 @@ export default function SignUp() {
           Sign Up
         </button>
       </form>
-      <p className="mt-4">Already have an account? <Link href="/"><a className="text-blue-500 underline">Login</a></Link></p>
+      <p className="mt-4">Already have an account? <Link href="/" className="text-blue-500 underline">Login</Link></p>
     </div>
   );
 }

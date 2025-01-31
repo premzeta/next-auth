@@ -71,7 +71,7 @@ export default function Home() {
       </div>
 
       <p className="mt-4">
-  Don&apos;t have an account? <Link href="/signup"><a className="text-blue-500 underline">Sign Up</a></Link>
+  Don&apos;t have an account? <Link href="/signup" className="text-blue-500 underline">Sign Up</Link>
 </p>
     </div>
   );
