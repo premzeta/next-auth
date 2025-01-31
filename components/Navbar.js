@@ -1,4 +1,5 @@
 import { signOut, useSession } from "next-auth/react";
+import Link from 'next/link';
 
 export default function Navbar() {
   const { data: session } = useSession();
@@ -10,8 +11,8 @@ export default function Navbar() {
         <div className="space-x-4">
           {session ? (
             <>
-              <a href="/protected" className="text-white hover:underline">Protected</a>
-              <a href="/unprotected" className="text-white hover:underline">Unprotected</a>
+              <Link href="/protected"><a className="text-white hover:underline">Protected</a></Link>
+              <Link href="/unprotected"><a className="text-white hover:underline">Unprotected</a></Link>
               <button
                 onClick={() => signOut({ callbackUrl: "/" })}
                 className="text-white hover:underline"

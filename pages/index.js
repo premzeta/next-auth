@@ -2,6 +2,7 @@ import { useState } from "react";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import Link from 'next/link';
 
 export default function Home() {
   const { data: session } = useSession();
@@ -70,8 +71,8 @@ export default function Home() {
       </div>
 
       <p className="mt-4">
-        Don't have an account? <a href="/signup" className="text-blue-500 underline">Sign Up</a>
-      </p>
+  Don&apos;t have an account? <Link href="/signup"><a className="text-blue-500 underline">Sign Up</a></Link>
+</p>
     </div>
   );
 }
