@@ -62,12 +62,12 @@ export default function Home() {
         >
           Login with Google
         </button>
-        <button
+        {/* <button
           onClick={() => signIn("facebook")}
           className="bg-blue-600 text-white px-4 py-2 rounded w-full"
         >
           Login with Facebook
-        </button>
+        </button> */}
       </div>
 
       <p className="mt-4">
